@@ -1,0 +1,48 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  padding: 1rem;
+  background-color: pink;
+  border-bottom: 0.5vh solid red;
+
+  img {
+    height: 100%;
+    width: auto;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+
+    h1 {
+      font-size: calc(1vw + 1vh);
+      color: red;
+    }
+  }
+
+  @media only screen and (max-width: 500px) {
+    & {
+      flex-direction: row-reverse;
+
+      ul {
+        width: 20%;
+        li {
+          display: none;
+        }
+        li.active {
+          display: block;
+          h1 {
+            font-size: calc(2vw + 2vh);
+          }
+        }
+      }
+    }
+  }
+}
