@@ -195,9 +195,16 @@ nav ul {
   justify-content: space-around;
   width: 40%;
 }
+nav ul .link {
+  text-decoration: none !important;
+}
 nav ul h1 {
   font-size: calc(1vw + 1vh);
+  font-weight: normal;
   color: red;
+}
+nav ul li.active h1 {
+  font-weight: bolder;
 }
 @media only screen and (max-width: 500px) {
   nav {
@@ -205,15 +212,30 @@ nav ul h1 {
   }
   nav ul {
     width: 20%;
+    transition: margin-top 0.1s;
   }
   nav ul li {
     display: none;
   }
+  nav ul li h1 {
+    font-size: calc(2vw + 2vh);
+  }
   nav ul li.active {
     display: block;
   }
-  nav ul li.active h1 {
-    font-size: calc(2vw + 2vh);
+  nav ul:hover {
+    display: block;
+    background-color: pink;
+    border: 0.5vh solid red;
+    border-top: none;
+    border-radius: 0 0 1rem 1rem;
+    padding: 1vh;
+    width: 30vw;
+    text-align: right;
+    margin-top: 26vh;
+  }
+  nav ul:hover li {
+    display: block;
   }
 }
 

@@ -21,9 +21,19 @@ nav {
     justify-content: space-around;
     width: 40%;
 
+    .link {
+      text-decoration: none !important;
+    }
+
     h1 {
       font-size: calc(1vw + 1vh);
+      font-weight: normal;
       color: red;
+    }
+    li.active {
+      h1 {
+        font-weight: bolder;
+      }
     }
   }
 
@@ -33,13 +43,29 @@ nav {
 
       ul {
         width: 20%;
+        transition: margin-top 0.1s;
         li {
           display: none;
+          h1 {
+            font-size: calc(2vw + 2vh);
+          }
         }
         li.active {
           display: block;
-          h1 {
-            font-size: calc(2vw + 2vh);
+        }
+
+        &:hover {
+          display: block;
+          background-color: pink;
+          border: 0.5vh solid red;
+          border-top: none;
+          border-radius: 0 0 1rem 1rem;
+          padding: 1vh;
+          width: 30vw;
+          text-align: right;
+          margin-top: 26vh;
+          li {
+            display: block;
           }
         }
       }
