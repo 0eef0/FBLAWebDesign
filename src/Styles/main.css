@@ -196,12 +196,24 @@ nav ul {
   width: 40%;
 }
 nav ul .link {
-  text-decoration: none !important;
+  text-decoration: none;
 }
 nav ul h1 {
   font-size: calc(1vw + 1vh);
   font-weight: normal;
   color: red;
+}
+nav ul h1::before {
+  position: absolute;
+  content: "";
+  top: 6vh;
+  width: 0;
+  height: 0.25vh;
+  background-color: red;
+  transition: width 0.3s;
+}
+nav ul h1:hover::before {
+  width: 4vw;
 }
 nav ul li.active h1 {
   font-weight: bolder;
@@ -220,6 +232,9 @@ nav ul li.active h1 {
   nav ul li h1 {
     font-size: calc(2vw + 2vh);
   }
+  nav ul li h1::before {
+    background-color: transparent;
+  }
   nav ul li.active {
     display: block;
   }
@@ -237,6 +252,37 @@ nav ul li.active h1 {
   nav ul:hover li {
     display: block;
   }
+}
+
+div#homePage {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 5vh;
+}
+div#homePage div#left {
+  width: 40%;
+  height: 80vh;
+  background-color: pink;
+  border-radius: 0 1rem 1rem 0;
+  border: 0.5vh solid red;
+  border-left: none;
+}
+div#homePage div#right {
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: flex-end;
+}
+div#homePage div#right div.right-box {
+  width: 100%;
+  height: 35vh;
+  background-color: pink;
+  border-radius: 1rem 0 0 1rem;
+  border: 0.5vh solid red;
+  border-right: none;
 }
 
 /*# sourceMappingURL=main.css.map */

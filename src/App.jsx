@@ -5,6 +5,7 @@ import {
   Route
 } from "react-router-dom";
 import Navbar from './Components/Navbar';
+import Home from './Components/Home';
 
 const getTempPage = (str) => {
     return <h1>{str}</h1>
@@ -17,7 +18,7 @@ const App = () => {
                 <Navbar />
                 <p style={{height: '10vh'}} />
                 <Routes>
-                    <Route index element={getTempPage('Home')} />
+                    <Route index element={<Home />} />
                     <Route path='contact' element={getTempPage('Contact')} />
                     <Route path='about' element={getTempPage('About')} />
                     <Route path='products' element={getTempPage('Product')} />

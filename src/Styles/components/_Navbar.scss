@@ -22,13 +22,27 @@ nav {
     width: 40%;
 
     .link {
-      text-decoration: none !important;
+      text-decoration: none;
     }
 
     h1 {
       font-size: calc(1vw + 1vh);
       font-weight: normal;
       color: red;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 6vh;
+        width: 0;
+        height: 0.25vh;
+        background-color: red;
+        transition: width 0.3s;
+      }
+      &:hover {
+        &::before {
+          width: 4vw;
+        }
+      }
     }
     li.active {
       h1 {
@@ -48,6 +62,9 @@ nav {
           display: none;
           h1 {
             font-size: calc(2vw + 2vh);
+            &::before {
+              background-color: transparent;
+            }
           }
         }
         li.active {
