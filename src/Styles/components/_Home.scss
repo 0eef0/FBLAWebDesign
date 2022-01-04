@@ -8,9 +8,9 @@ div#homePage {
   div#left {
     width: 40%;
     height: 80vh;
-    background-color: pink;
+    background-color: $color-one;
     border-radius: 0 1rem 1rem 0;
-    border: 0.5vh solid red;
+    border: 0.5vh solid $shadow-bg;
     border-left: none;
   }
   div#right {
@@ -22,9 +22,9 @@ div#homePage {
     div.right-box {
       width: 100%;
       height: 35vh;
-      background-color: pink;
+      background-color: $color-one;
       border-radius: 1rem 0 0 1rem;
-      border: 0.5vh solid red;
+      border: 0.5vh solid $shadow-bg;
       border-right: none;
     }
   }
