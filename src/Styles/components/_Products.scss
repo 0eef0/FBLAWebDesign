@@ -1,0 +1,53 @@
+$black: black;
+$white: white;
+$red-1: hsl(0, 100%, 79%);
+$red-2: hsl(0, 100%, 70%);
+$red-3: hsl(0, 100%, 64%);
+$red-4: hsl(0, 100%, 53%);
+$red-5: hsl(0, 100%, 36%);
+$red-6: hsl(0, 100%, 21%);
+$blue-1: rgb(153, 214, 255);
+$blue-1: rgb(66, 179, 255);
+$blue-1: rgb(0, 153, 255);
+$blue-2: rgb(0, 102, 255);
+$blue-3: rgb(0, 47, 255);
+$blue-4: rgb(0, 42, 156);
+$blue-5: rgb(0, 13, 126);
+$grey-1: rgb(196, 196, 196);
+$grey-2: rgb(136, 136, 136);
+$grey-3: rgb(99, 99, 99);
+$grey-4: rgb(82, 82, 82);
+$grey-5: rgb(65, 65, 65);
+$grey-6: rgb(32, 32, 32);
+$dark-shadow: 0 0px 15px rgba(0, 0, 0, 0.8);
+$radius: 0.75rem;
+
+.Pro-top {
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.Pro-header {
+  text-align: center;
+}
+.Pro-info {
+  text-align: center;
+}
+.Card-Holder {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 60rem;
+}
+.Card {
+  width: 25rem;
+  height: 40rem;
+  box-shadow: inset $dark-shadow, $dark-shadow;
+  background-color: $black;
+  border-radius: $radius;
+}
+.link-Products {
+  text-decoration: none;
+  color: $black;
+}
