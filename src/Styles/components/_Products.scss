@@ -21,6 +21,7 @@ $grey-5: rgb(65, 65, 65);
 $grey-6: rgb(32, 32, 32);
 $dark-shadow: 0 0px 15px rgba(0, 0, 0, 0.8);
 $radius: 0.75rem;
+$purple-1: rgb(114, 0, 221);
 
 .Pro-top {
   width: 60%;
@@ -47,7 +48,7 @@ $radius: 0.75rem;
   width: 25rem;
   height: 35rem;
   box-shadow: inset $dark-shadow, $dark-shadow;
-  background-color: transparent;
+  background-color: rgb(116, 116, 116);
   border-radius: $radius;
   margin-top: 2rem;
   margin-left: 1rem;
@@ -59,10 +60,18 @@ $radius: 0.75rem;
 .Card-head {
   text-align: center;
   margin-top: 1.5rem;
+  color: $purple-1;
+  font-size: 3rem;
 }
 .Card-Info {
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  width: 20rem;
+  font-size: 1.3rem;
   margin-top: 1rem;
   text-align: center;
+  color: $white;
 }
 .Card-Img {
   border-radius: $radius;
@@ -72,4 +81,19 @@ $radius: 0.75rem;
   top: 1.5rem;
   height: 15rem;
   width: 20rem;
+}
+.Card-Btn {
+  height: 3rem;
+  width: 14rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  background-color: $purple-1;
+  box-shadow: inset, $dark-shadow $dark-shadow;
+  border-radius: $radius;
+}
+.Card-Btn-Text {
+  color: $white;
+  font-size: 1.2rem;
 }
