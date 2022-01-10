@@ -302,9 +302,9 @@ div#homePage div#right div.right-box {
 
 .Card {
   width: 25rem;
-  height: 35rem;
+  height: 38rem;
   box-shadow: inset 0 0px 15px rgba(0, 0, 0, 0.8), 0 0px 15px rgba(0, 0, 0, 0.8);
-  background-color: #747474;
+  background-color: black;
   border-radius: 0.75rem;
   margin-top: 2rem;
   margin-left: 1rem;
