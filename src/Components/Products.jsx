@@ -51,7 +51,7 @@ const Products = () => {
                 </a>
                 <a className='link-Products' href="https://tender-beaver-d56329.netlify.app/">
                     <div className="Card">
-                    <img className="Card-Img" src="https://pbs.twimg.com/media/E6iDAlaWYAEF6ZP.jpg" alt="" />
+                    <img className="Card-Img" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/53/NBA_75th_anniversary_logo.svg/1200px-NBA_75th_anniversary_logo.svg.png" alt="" />
                     <h3 className="Card-head">NBA</h3>
                     <p className="Card-Info">This website was made by Andrew Makris: This page is about the NBA and shows the NBA games scores, and NBA teams records. unfortunately The api that had been accessed is no longer available so its currently not up right now</p>
                     <button className="Card-Btn"><h4 className="Card-Btn-Text">Click To See</h4></button>
