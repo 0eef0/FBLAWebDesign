@@ -276,7 +276,7 @@ div#homePage div#right div.right-box {
 }
 
 .Pro-top {
-  width: 60%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -284,10 +284,16 @@ div#homePage div#right div.right-box {
 
 .Pro-header {
   text-align: center;
+  font-family: Sans-Serif;
+  border-bottom: #8400ff groove 4px;
+  margin-bottom: 1rem;
 }
 
 .Pro-info {
+  margin-top: 1rem;
   text-align: center;
+  font-size: 1.3rem;
+  font-family: Sans-Serif;
 }
 
 .Card-Holder {
@@ -304,7 +310,7 @@ div#homePage div#right div.right-box {
   width: 25rem;
   height: 38rem;
   box-shadow: inset 0 0px 15px rgba(0, 0, 0, 0.8), 0 0px 15px rgba(0, 0, 0, 0.8);
-  background-color: black;
+  background-color: #7c7c7c;
   border-radius: 0.75rem;
   margin-top: 2rem;
   margin-left: 1rem;
@@ -318,8 +324,9 @@ div#homePage div#right div.right-box {
 .Card-head {
   text-align: center;
   margin-top: 1.5rem;
-  color: #7200dd;
+  color: #3a0070;
   font-size: 3rem;
+  font-family: Sans-Serif;
 }
 
 .Card-Info {
@@ -327,10 +334,11 @@ div#homePage div#right div.right-box {
   margin-left: auto;
   display: block;
   width: 20rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-top: 1rem;
   text-align: center;
   color: white;
+  font-family: Sans-Serif;
 }
 
 .Card-Img {
@@ -350,7 +358,7 @@ div#homePage div#right div.right-box {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  background-color: #7200dd;
+  background-color: #3a0070;
   box-shadow: inset, 0 0px 15px rgba(0, 0, 0, 0.8) 0 0px 15px rgba(0, 0, 0, 0.8);
   border-radius: 0.75rem;
 }
@@ -358,4 +366,41 @@ div#homePage div#right div.right-box {
 .Card-Btn-Text {
   color: white;
   font-size: 1.2rem;
+  font-family: Sans-Serif;
+}
+
+.PersonInfo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width: 70%;
+  height: 90vh;
+  background-color: rgba(61, 61, 61, 0.8);
+  border-radius: 0.75rem;
+}
+
+.personStuff {
+  width: 40%;
+}
+
+.Person {
+  color: white;
+  margin-top: 1rem;
+  font-size: 3rem;
+  width: 40%;
+  text-align: center;
+}
+
+.PersonImg {
+  position: relative;
+  left: 1rem;
+  width: 25rem;
+  height: 30rem;
+}
+
+.PersonContact {
+  display: block;
+  position: relative;
+  left: 30rem;
 }/*# sourceMappingURL=main.css.map */

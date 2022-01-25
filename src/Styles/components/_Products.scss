@@ -22,18 +22,26 @@ $grey-6: rgb(32, 32, 32);
 $dark-shadow: 0 0px 15px rgba(0, 0, 0, 0.8);
 $radius: 0.75rem;
 $purple-1: rgb(58, 0, 112);
+$purple-2: rgb(132, 0, 255);
+$Font-Use: Sans-Serif;
 
 .Pro-top {
-  width: 60%;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
   display: block;
 }
 .Pro-header {
   text-align: center;
+  font-family: $Font-Use;
+  border-bottom: $purple-2 groove 4px;
+  margin-bottom: 1rem;
 }
 .Pro-info {
+  margin-top: 1rem;
   text-align: center;
+  font-size: 1.3rem;
+  font-family: $Font-Use;
 }
 .Card-Holder {
   display: flex;
@@ -62,16 +70,18 @@ $purple-1: rgb(58, 0, 112);
   margin-top: 1.5rem;
   color: $purple-1;
   font-size: 3rem;
+  font-family: $Font-Use;
 }
 .Card-Info {
   margin-right: auto;
   margin-left: auto;
   display: block;
   width: 20rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   margin-top: 1rem;
   text-align: center;
   color: $white;
+  font-family: $Font-Use;
 }
 .Card-Img {
   border-radius: $radius;
@@ -96,4 +106,5 @@ $purple-1: rgb(58, 0, 112);
 .Card-Btn-Text {
   color: $white;
   font-size: 1.2rem;
+  font-family: $Font-Use;
 }

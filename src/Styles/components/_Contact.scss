@@ -1,0 +1,37 @@
+.PersonInfo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  width: 70%;
+  height: 90vh;
+  background-color: hsla(0, 0%, 24%, 0.8);
+  border-radius: 0.75rem;
+}
+.personStuff {
+  width: 40%;
+}
+.Person {
+  color: white;
+  margin-top: 1rem;
+  font-size: 3rem;
+  width: 40%;
+  text-align: center;
+}
+.PersonImg {
+  position: relative;
+  left: 1rem;
+  width: 25rem;
+  height: 30rem;
+}
+.PersonEmail {
+}
+.PersonPhone {
+}
+.PersonGithub {
+}
+.PersonContact {
+  display: block;
+  position: relative;
+  left: 30rem;
+}
