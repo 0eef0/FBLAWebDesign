@@ -3,9 +3,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
-  width: 70%;
+  width: 60%;
   height: 90vh;
-  background-color: hsla(0, 0%, 24%, 0.8);
+  background-color: hsla(0, 0%, 0%, 0.9);
   border-radius: 0.75rem;
 }
 .personStuff {
@@ -25,13 +25,30 @@
   height: 30rem;
 }
 .PersonEmail {
+  color: white;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 .PersonPhone {
+  color: white;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 .PersonGithub {
+  color: white;
+  margin-bottom: 3rem;
+  text-align: center;
 }
 .PersonContact {
   display: block;
   position: relative;
-  left: 30rem;
+  left: 8.5rem;
+  bottom: 35rem;
+}
+.sub {
+  position: relative;
+  left: 18rem;
+  width: 30rem;
+  font-size: 3rem;
+  background-color: rgb(44, 44, 44);
 }

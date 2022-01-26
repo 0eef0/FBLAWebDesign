@@ -19,9 +19,9 @@ const Contact = () => {
                         <img className="PersonImg" src={image} alt={Person} />
                     </div>
                     <div className="PersonContact">
-                        <p className='PersonEmail'>Email: {Email}</p>
-                        <p className="PersonPhone">Phone-Number: {Phone}</p>
-                        <p className="PersonGithub">Github: {Github}</p>
+                        <p className='PersonEmail'><p className='sub'>Email:</p> <br/> {Email}</p>
+                        <p className="PersonPhone"><p className='sub'>Phone-Number:</p> <br/>  {Phone}</p>
+                        <p className="PersonGithub"><p className='sub'>Github:</p> <br/>  {Github}</p>
                     </div>
                 </div>
             )
