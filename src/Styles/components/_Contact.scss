@@ -1,54 +1,57 @@
-.PersonInfo {
-  display: block;
+$dark-shadow2: 0 0px 15px rgba(0, 0, 0, 0.8);
+$purple-3: rgb(58, 0, 112);
+$Font-Use2: Sans-Serif;
+.contact {
+  width: 70vw;
+  height: 45vh;
+  background-color: #c9c9c9;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
-  width: 60%;
-  height: 90vh;
-  background-color: hsla(0, 0%, 0%, 0.9);
   border-radius: 0.75rem;
+  box-shadow: inset, $dark-shadow2 $dark-shadow2;
 }
-.personStuff {
-  width: 40%;
+.contact:hover {
+  box-shadow: 2px 2px 2px $purple-3;
 }
 .Person {
-  color: white;
+  text-align: center;
+  color: $purple-3;
+  font-family: $Font-Use2;
+  border-bottom: 3px $purple-3 solid;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.PersonImage {
+  margin-left: 3rem;
   margin-top: 1rem;
-  font-size: 3rem;
-  width: 40%;
-  text-align: center;
+  height: 30vh;
+  width: 40vh;
+  border-radius: 0.75rem;
 }
-.PersonImg {
-  position: relative;
-  left: 1rem;
-  width: 25rem;
-  height: 30rem;
-}
-.PersonEmail {
-  color: white;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.PersonPhone {
-  color: white;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.PersonGithub {
-  color: white;
-  margin-bottom: 3rem;
-  text-align: center;
+.PersonInfoHolder {
+  display: flex;
+  justify-content: flex-start;
 }
 .PersonContact {
-  display: block;
-  position: relative;
-  left: 8.5rem;
-  bottom: 35rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  text-align: left;
+  font-family: $Font-Use2;
 }
-.sub {
-  position: relative;
-  left: 18rem;
-  width: 30rem;
-  font-size: 3rem;
-  background-color: rgb(44, 44, 44);
+.PersonInfo {
+  margin-bottom: 2rem;
+  font-family: $Font-Use2;
+  border-bottom: 3px $purple-3 solid;
+}
+.contactHeader {
+  text-align: center;
+  color: $purple-3;
+  background-color: rgb(236, 236, 236);
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.75rem;
 }

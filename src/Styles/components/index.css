@@ -194,69 +194,64 @@ div#homePage div#right div.right-box {
   font-family: Sans-Serif;
 }
 
-.PersonInfo {
-  display: block;
+.contact {
+  width: 70vw;
+  height: 45vh;
+  background-color: #c9c9c9;
+  margin-bottom: 4rem;
+  margin-top: 5rem;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
-  width: 60%;
-  height: 75vh;
-  background-color: rgba(0, 0, 0, 0.9);
   border-radius: 0.75rem;
+  box-shadow: inset, 0 0px 15px rgba(0, 0, 0, 0.8) 0 0px 15px rgba(0, 0, 0, 0.8);
 }
 
-.personStuff {
-  width: 40%;
+.contact:hover {
+  box-shadow: 2px 2px 2px #3a0070;
 }
 
 .Person {
-  color: white;
+  text-align: center;
+  color: #3a0070;
+  font-family: Sans-Serif;
+  border-bottom: 3px #3a0070 solid;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.PersonImage {
+  margin-left: 3rem;
   margin-top: 1rem;
-  font-size: 4rem;
-  width: 100%;
-  text-align: center;
-  border-bottom: 8px groove white;
+  height: 30vh;
+  width: 40vh;
+  border-radius: 0.75rem;
 }
 
-.PersonImg {
-  position: relative;
-  left: 0rem;
-  width: 25rem;
-  height: 30.2rem;
-}
-
-.PersonEmail {
-  color: white;
-  margin-bottom: 2rem;
-  text-align: center;
-  margin-right: -10rem;
-}
-
-.PersonPhone {
-  color: white;
-  margin-bottom: 2rem;
-  text-align: center;
-  margin-right: -9.6rem;
-}
-
-.PersonGithub {
-  margin-right: -10rem;
-  color: white;
-  margin-bottom: 10rem;
-  text-align: center;
+.PersonInfoHolder {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .PersonContact {
-  display: block;
-  position: relative;
-  left: 7.5rem;
-  bottom: 30.5rem;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  text-align: left;
+  font-family: Sans-Serif;
 }
 
-.sub {
-  position: relative;
-  left: 17.5rem;
-  width: 31.3rem;
-  font-size: 3rem;
-  background-color: #2c2c2c;
+.PersonInfo {
+  margin-bottom: 2rem;
+  font-family: Sans-Serif;
+  border-bottom: 3px #3a0070 solid;
+}
+
+.contactHeader {
+  text-align: center;
+  color: #3a0070;
+  background-color: #ececec;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0.75rem;
 }/*# sourceMappingURL=index.css.map */

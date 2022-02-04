@@ -9,20 +9,28 @@ const Contact = () => {
             <h1>Error 404</h1>
         </div>
     }}
+    
     if(isPage){
         return Data.map((data)=>{
             const {id,Person,Email,Phone,Github,image} = data;
             return(
-                <div className="PersonInfo" key={id}>
-                    <div className="PersonStuff">
-                        <h1 className="Person">{Person}</h1>
-                        <img className="PersonImg" src={image} alt={Person} />
+                <div>
+                    <h1 className="contactHeader">Contact Our Team Members</h1>
+                    <div className="contact" key={id}>
+                    <h1 className="Person">{Person}</h1>
+                    <div className="PersonInfoHolder">
+                        <div>
+                            <img className="PersonImage" src={image} alt={Person} />
+                        </div>
+                        <div>
+                            <ul className="PersonContact">
+                                <li className="PersonInfo">Email: {Email}</li>
+                                <li className="PersonInfo">Phone: {Phone}</li>
+                                <li className="PersonInfo">Github: {Github}</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div className="PersonContact">
-                        <p className='PersonEmail'><p className='sub'>Email:</p> <br/> {Email}</p>
-                        <p className="PersonPhone"><p className='sub'>Phone-Number:</p> <br/>  {Phone}</p>
-                        <p className="PersonGithub"><p className='sub'>Github:</p> <br/>  {Github}</p>
-                    </div>
+                </div>
                 </div>
             )
         })
