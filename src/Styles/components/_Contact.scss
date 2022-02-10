@@ -1,57 +1,56 @@
-$dark-shadow2: 0 0px 15px rgba(0, 0, 0, 0.8);
+$Font-Use3: Sans-Serif;
 $purple-3: rgb(58, 0, 112);
-$Font-Use2: Sans-Serif;
-.contact {
-  width: 70vw;
-  height: 45vh;
-  background-color: #c9c9c9;
-  margin-bottom: 4rem;
-  margin-top: 5rem;
+$dark-shadow2: 0 0px 15px rgba(0, 0, 0, 0.8);
+
+form {
+  width: 90%;
+  max-width: 750px;
+  margin: 15px auto;
+  background-color: rgb(59, 59, 59);
+  padding: 1rem;
+  // border-radius: 1rem;
+  box-shadow: $dark-shadow2;
+}
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: solid 1px rgb(0, 0, 0);
+  padding: 4px 7px;
+  border-radius: 0.75rem;
+  font-family: $Font-Use3;
+}
+#eml,
+#tel {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 0.75rem;
-  box-shadow: inset, $dark-shadow2 $dark-shadow2;
+  display: block;
 }
-.contact:hover {
-  box-shadow: 2px 2px 2px $purple-3;
+button:hover {
+  background-color: rgb(45, 0, 157);
+  color: white;
 }
-.Person {
-  text-align: center;
-  color: $purple-3;
-  font-family: $Font-Use2;
-  border-bottom: 3px $purple-3 solid;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.PersonImage {
-  margin-left: 3rem;
-  margin-top: 1rem;
-  height: 30vh;
-  width: 40vh;
-  border-radius: 0.75rem;
-}
-.PersonInfoHolder {
+.btn-group {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
 }
-.PersonContact {
-  margin-top: 1rem;
-  margin-left: 3rem;
-  text-align: left;
-  font-family: $Font-Use2;
-}
-.PersonInfo {
-  margin-bottom: 2rem;
-  font-family: $Font-Use2;
-  border-bottom: 3px $purple-3 solid;
-}
-.contactHeader {
-  text-align: center;
-  color: $purple-3;
-  background-color: rgb(236, 236, 236);
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
+.resetForm {
+  width: 8rem;
+  height: 2rem;
   border-radius: 0.75rem;
+}
+.SumbitForm {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 0.75rem;
+  margin-top: 0.5rem;
+}
+.ContactHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: 2px solid $purple-3;
+  font-family: $Font-Use3;
+  color: white;
 }
