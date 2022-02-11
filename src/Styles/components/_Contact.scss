@@ -1,54 +1,56 @@
-.PersonInfo {
-  display: block;
+$Font-Use3: Sans-Serif;
+$purple-3: rgb(58, 0, 112);
+$dark-shadow2: 0 0px 15px rgba(0, 0, 0, 0.8);
+
+form {
+  width: 90%;
+  max-width: 750px;
+  margin: 15px auto;
+  background-color: rgb(59, 59, 59);
+  padding: 1rem;
+  // border-radius: 1rem;
+  box-shadow: $dark-shadow2;
+}
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: solid 1px rgb(0, 0, 0);
+  padding: 4px 7px;
+  border-radius: 0.75rem;
+  font-family: $Font-Use3;
+}
+#eml,
+#tel {
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2rem;
-  width: 60%;
-  height: 90vh;
-  background-color: hsla(0, 0%, 0%, 0.9);
+  display: block;
+}
+button:hover {
+  background-color: rgb(45, 0, 157);
+  color: white;
+}
+.btn-group {
+  display: flex;
+  justify-content: space-around;
+}
+.resetForm {
+  width: 8rem;
+  height: 2rem;
   border-radius: 0.75rem;
 }
-.personStuff {
-  width: 40%;
+.SumbitForm {
+  width: 8rem;
+  height: 2rem;
+  border-radius: 0.75rem;
+  margin-top: 0.5rem;
 }
-.Person {
-  color: white;
-  margin-top: 1rem;
-  font-size: 3rem;
-  width: 40%;
+.ContactHeader {
   text-align: center;
-}
-.PersonImg {
-  position: relative;
-  left: 1rem;
-  width: 25rem;
-  height: 30rem;
-}
-.PersonEmail {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid $purple-3;
+  font-family: $Font-Use3;
   color: white;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.PersonPhone {
-  color: white;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.PersonGithub {
-  color: white;
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.PersonContact {
-  display: block;
-  position: relative;
-  left: 8.5rem;
-  bottom: 35rem;
-}
-.sub {
-  position: relative;
-  left: 18rem;
-  width: 30rem;
-  font-size: 3rem;
-  background-color: rgb(44, 44, 44);
 }

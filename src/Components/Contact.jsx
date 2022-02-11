@@ -1,32 +1,22 @@
-import {React,useState} from 'react'
-import Data from '../Util/Links'
+import {React} from 'react'
 
 const Contact = () => {
-   const [isError, setIsError] = useState(false)
-    const [isPage,setIsPage] = useState(Data)
-    if(isError){{
+    return (
         <div>
-            <h1>Error 404</h1>
-        </div>
-    }}
-    if(isPage){
-        return Data.map((data)=>{
-            const {id,Person,Email,Phone,Github,image} = data;
-            return(
-                <div className="PersonInfo" key={id}>
-                    <div className="PersonStuff">
-                        <h1 className="Person">{Person}</h1>
-                        <img className="PersonImg" src={image} alt={Person} />
-                    </div>
-                    <div className="PersonContact">
-                        <p className='PersonEmail'><p className='sub'>Email:</p> <br/> {Email}</p>
-                        <p className="PersonPhone"><p className='sub'>Phone-Number:</p> <br/>  {Phone}</p>
-                        <p className="PersonGithub"><p className='sub'>Github:</p> <br/>  {Github}</p>
-                    </div>
+            <form method="post" action="process.php">
+                <h2 className="ContactHeader">Please Feel Free to Contact Us!</h2>
+                <input id="first-name" type="text" required placeholder="First name" name="First-Name"></input>
+                <input type="text" required placeholder="Last name" name="Last-Name"></input>
+                <input id="eml" type="email" required placeholder="Email@gmail.com" name="Email"></input>
+                <input id="tel" type="tel" placeholder="Phone Number" name="Phone-Number"></input>
+                <textarea rows="6" required placeholder="Message" name="Message"></textarea>
+                <div className="btn-group">
+                    <button className="resetForm" type="reset">Reset</button>
+                    <button className="SumbitForm" type="submit">Submit</button>
                 </div>
-            )
-        })
-    }
+            </form>
+        </div>
+    )
 }
 
 export default Contact
