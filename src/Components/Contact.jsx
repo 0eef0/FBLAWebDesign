@@ -2,7 +2,7 @@ import {React} from 'react'
 
 const Contact = () => {
     return (
-        <div>
+        <div className="contact">
             <form method="post" action="process.php">
                 <h2 className="ContactHeader">Please Feel Free to Contact Us!</h2>
                 <input id="first-name" type="text" required placeholder="First name" name="First-Name"></input>

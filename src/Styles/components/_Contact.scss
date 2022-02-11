@@ -1,12 +1,15 @@
 $Font-Use3: Sans-Serif;
-$purple-3: rgb(58, 0, 112);
-$dark-shadow2: 0 0px 15px rgba(0, 0, 0, 0.8);
+$purple-3: rgb(174, 0, 0);
+$dark-shadow2: 0 0px 15px rgba(255, 0, 0, 0.8);
 
+.contact {
+  margin-top: 1rem;
+}
 form {
   width: 90%;
   max-width: 750px;
   margin: 15px auto;
-  background-color: rgb(59, 59, 59);
+  background-color: pink;
   padding: 1rem;
   // border-radius: 1rem;
   box-shadow: $dark-shadow2;
@@ -16,10 +19,11 @@ textarea {
   width: 100%;
   margin-bottom: 10px;
   border-radius: 3px;
-  border: solid 1px rgb(0, 0, 0);
+  border: solid 1px $purple-3;
   padding: 4px 7px;
   border-radius: 0.75rem;
   font-family: $Font-Use3;
+  background-color: pink;
 }
 #eml,
 #tel {
@@ -29,7 +33,7 @@ textarea {
   display: block;
 }
 button:hover {
-  background-color: rgb(45, 0, 157);
+  background-color: rgb(255, 0, 0);
   color: white;
 }
 .btn-group {
@@ -52,5 +56,5 @@ button:hover {
   margin-bottom: 2rem;
   border-bottom: 2px solid $purple-3;
   font-family: $Font-Use3;
-  color: white;
+  color: rgb(0, 0, 0);
 }

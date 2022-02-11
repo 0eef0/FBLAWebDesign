@@ -329,13 +329,15 @@ div#homePage div#right div.right-box {
   margin-left: auto;
   margin-right: auto;
   display: block;
+  margin-top: 2rem;
 }
 
 .Pro-header {
   text-align: center;
   font-family: Sans-Serif;
-  border-bottom: #8400ff groove 4px;
+  border-bottom: #ff0f0f groove 4px;
   margin-bottom: 1rem;
+  font-size: 3rem;
 }
 
 .Pro-info {
@@ -347,9 +349,9 @@ div#homePage div#right div.right-box {
 
 .Card-Holder {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  width: 80rem;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
@@ -359,10 +361,10 @@ div#homePage div#right div.right-box {
   width: 25rem;
   height: 38rem;
   box-shadow: inset 0 0px 15px rgba(0, 0, 0, 0.8), 0 0px 15px rgba(0, 0, 0, 0.8);
-  background-color: #7c7c7c;
+  background-color: pink;
   border-radius: 0.75rem;
   margin-top: 2rem;
-  margin-left: 1rem;
+  margin-left: 5rem;
 }
 
 .link-Products {
@@ -373,7 +375,7 @@ div#homePage div#right div.right-box {
 .Card-head {
   text-align: center;
   margin-top: 1.5rem;
-  color: #3a0070;
+  color: #b80000;
   font-size: 3rem;
   font-family: Sans-Serif;
 }
@@ -407,7 +409,7 @@ div#homePage div#right div.right-box {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  background-color: #3a0070;
+  background-color: #b80000;
   box-shadow: inset, 0 0px 15px rgba(0, 0, 0, 0.8) 0 0px 15px rgba(0, 0, 0, 0.8);
   border-radius: 0.75rem;
 }
@@ -418,13 +420,17 @@ div#homePage div#right div.right-box {
   font-family: Sans-Serif;
 }
 
+.contact {
+  margin-top: 1rem;
+}
+
 form {
   width: 90%;
   max-width: 750px;
   margin: 15px auto;
-  background-color: #3b3b3b;
+  background-color: pink;
   padding: 1rem;
-  box-shadow: 0 0px 15px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0px 15px rgba(255, 0, 0, 0.8);
 }
 
 input,
@@ -432,10 +438,11 @@ textarea {
   width: 100%;
   margin-bottom: 10px;
   border-radius: 3px;
-  border: solid 1px black;
+  border: solid 1px #ae0000;
   padding: 4px 7px;
   border-radius: 0.75rem;
   font-family: Sans-Serif;
+  background-color: pink;
 }
 
 #eml,
@@ -447,7 +454,7 @@ textarea {
 }
 
 button:hover {
-  background-color: #2d009d;
+  background-color: red;
   color: white;
 }
 
@@ -472,9 +479,9 @@ button:hover {
 .ContactHeader {
   text-align: center;
   margin-bottom: 2rem;
-  border-bottom: 2px solid #3a0070;
+  border-bottom: 2px solid #ae0000;
   font-family: Sans-Serif;
-  color: white;
+  color: black;
 }
 
 div#aboutPg h1 {
@@ -518,7 +525,8 @@ div#aboutPg div#founders div div.founder img {
   height: 80%;
   border-radius: 1rem;
   border: 0.5vh solid red;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: 1vw;
 }
 
@@ -572,6 +580,4 @@ div#aboutPg div#founders div.leftFounders div.founder {
     margin: 0.5rem;
     order: -1 !important;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

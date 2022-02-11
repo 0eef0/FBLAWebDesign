@@ -21,8 +21,8 @@ $grey-5: rgb(65, 65, 65);
 $grey-6: rgb(32, 32, 32);
 $dark-shadow: 0 0px 15px rgba(0, 0, 0, 0.8);
 $radius: 0.75rem;
-$purple-1: rgb(58, 0, 112);
-$purple-2: rgb(132, 0, 255);
+$purple-1: hsl(0, 100%, 36%);
+$purple-2: hsl(0, 100%, 53%);
 $Font-Use: Sans-Serif;
 
 .Pro-top {
@@ -30,12 +30,14 @@ $Font-Use: Sans-Serif;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  margin-top: 2rem;
 }
 .Pro-header {
   text-align: center;
   font-family: $Font-Use;
   border-bottom: $purple-2 groove 4px;
   margin-bottom: 1rem;
+  font-size: 3rem;
 }
 .Pro-info {
   margin-top: 1rem;
@@ -45,9 +47,9 @@ $Font-Use: Sans-Serif;
 }
 .Card-Holder {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  width: 80rem;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1rem;
@@ -56,10 +58,10 @@ $Font-Use: Sans-Serif;
   width: 25rem;
   height: 38rem;
   box-shadow: inset $dark-shadow, $dark-shadow;
-  background-color: rgb(124, 124, 124);
+  background-color: pink;
   border-radius: $radius;
   margin-top: 2rem;
-  margin-left: 1rem;
+  margin-left: 5rem;
 }
 .link-Products {
   text-decoration: none;
