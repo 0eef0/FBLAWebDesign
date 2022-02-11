@@ -48,6 +48,7 @@ blockquote,
 q {
   quotes: none;
 }
+
 blockquote::before, blockquote::after,
 q::before,
 q::after {
@@ -177,6 +178,18 @@ body {
   overflow-x: hidden;
 }
 
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v24/ieVi2ZhZI2eCN5jzbjEETS9weq8-33mZGCkYb8td.woff2) format("woff2");
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
 nav {
   position: fixed;
   top: 0;
@@ -187,59 +200,65 @@ nav {
   width: 100%;
   height: 10vh;
   padding: 1rem;
+  background-color: pink;
+  border-bottom: 0.5vh solid red;
 }
+
 nav img {
   height: 100%;
   width: auto;
 }
+
 nav ul {
   display: flex;
   justify-content: space-around;
   width: 40%;
 }
+
 nav ul .link {
-  text-decoration: none;
+  text-decoration: none !important;
 }
+
 nav ul h1 {
   font-size: calc(1vw + 1vh);
   font-weight: normal;
+  color: red;
 }
-nav ul h1::before {
-  position: absolute;
-  content: "";
-  top: 6vh;
-  width: 0;
-  height: 0.25vh;
-  transition: width 0.3s;
-}
-nav ul h1:hover::before {
-  width: 4vw;
-}
+
 nav ul li.active h1 {
   font-weight: bolder;
 }
+
 @media only screen and (max-width: 500px) {
   nav {
     flex-direction: row-reverse;
   }
+
   nav ul {
     width: 20%;
     transition: margin-top 0.1s;
   }
+
   nav ul li {
     display: none;
   }
+
   nav ul li h1 {
     font-size: calc(2vw + 2vh);
   }
-  nav ul li h1::before {
-    background-color: transparent;
-  }
+
   nav ul li.active {
     display: block;
   }
+
+  nav ul li.active h1 {
+    font-size: calc(2vw + 2vh);
+  }
+
   nav ul:hover {
     display: block;
+    background-color: pink;
+    border: 0.5vh solid red;
     border-top: none;
     border-radius: 0 0 1rem 1rem;
     padding: 1vh;
@@ -247,11 +266,11 @@ nav ul li.active h1 {
     text-align: right;
     margin-top: 26vh;
   }
+
   nav ul:hover li {
     display: block;
   }
 }
-
 div#homePage {
   width: 100%;
   display: flex;
@@ -259,12 +278,16 @@ div#homePage {
   justify-content: space-between;
   padding-top: 5vh;
 }
+
 div#homePage div#left {
   width: 40%;
   height: 80vh;
+  background-color: pink;
   border-radius: 0 1rem 1rem 0;
+  border: 0.5vh solid red;
   border-left: none;
 }
+
 div#homePage div#right {
   width: 40%;
   display: flex;
@@ -272,13 +295,35 @@ div#homePage div#right {
   align-content: space-between;
   justify-content: flex-end;
 }
+
 div#homePage div#right div.right-box {
   width: 100%;
   height: 35vh;
+  background-color: pink;
   border-radius: 1rem 0 0 1rem;
+  border: 0.5vh solid red;
   border-right: none;
 }
 
+@media only screen and (max-width: 500px) {
+  div#homePage {
+    display: block;
+    width: 100%;
+  }
+
+  div#homePage div {
+    width: 90% !important;
+  }
+
+  div#homePage div#right {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  div#homePage div#right div.right-box {
+    margin-top: 1rem;
+  }
+}
 .Pro-top {
   width: 50%;
   margin-left: auto;
@@ -379,7 +424,7 @@ div#homePage div#right div.right-box {
   margin-right: auto;
   margin-top: 2rem;
   width: 60%;
-  height: 75vh;
+  height: 90vh;
   background-color: rgba(0, 0, 0, 0.9);
   border-radius: 0.75rem;
 }
@@ -391,51 +436,146 @@ div#homePage div#right div.right-box {
 .Person {
   color: white;
   margin-top: 1rem;
-  font-size: 4rem;
-  width: 100%;
+  font-size: 3rem;
+  width: 40%;
   text-align: center;
-  border-bottom: 8px groove white;
 }
 
 .PersonImg {
   position: relative;
-  left: 0rem;
+  left: 1rem;
   width: 25rem;
-  height: 30.2rem;
+  height: 30rem;
 }
 
 .PersonEmail {
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
-  margin-right: -10rem;
 }
 
 .PersonPhone {
   color: white;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
-  margin-right: -9.6rem;
 }
 
 .PersonGithub {
-  margin-right: -10rem;
   color: white;
-  margin-bottom: 10rem;
+  margin-bottom: 3rem;
   text-align: center;
 }
 
 .PersonContact {
   display: block;
   position: relative;
-  left: 7.5rem;
-  bottom: 30.5rem;
+  left: 8.5rem;
+  bottom: 35rem;
 }
 
 .sub {
   position: relative;
-  left: 17.5rem;
-  width: 31.3rem;
+  left: 18rem;
+  width: 30rem;
   font-size: 3rem;
   background-color: #2c2c2c;
-}/*# sourceMappingURL=main.css.map */
+}
+
+div#aboutPg h1 {
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 0.5vh solid red;
+  background-color: pink;
+  width: 70%;
+  margin: 0 auto;
+  color: red;
+}
+
+div#aboutPg div#founders {
+  display: flex;
+  justify-content: space-between;
+  height: 75vh;
+}
+
+div#aboutPg div#founders div {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+  width: 45%;
+}
+
+div#aboutPg div#founders div div.founder {
+  width: 100%;
+  height: 30vh;
+  background-color: pink;
+  border: 0.5vh solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
+div#aboutPg div#founders div div.founder img {
+  width: 30%;
+  height: 80%;
+  border-radius: 1rem;
+  border: 0.5vh solid red;
+  object-fit: cover;
+  margin: 1vw;
+}
+
+div#aboutPg div#founders div div.founder p {
+  margin: 0 1vw;
+  color: red;
+}
+
+div#aboutPg div#founders div.rightFounders,
+div#aboutPg div#founders div.leftFounders {
+  align-content: space-evenly;
+}
+
+div#aboutPg div#founders div.rightFounders div.founder {
+  border-right: none;
+  border-radius: 1rem 0 0 1rem;
+}
+
+div#aboutPg div#founders div.rightFounders div.founder img {
+  order: 0;
+}
+
+div#aboutPg div#founders div.rightFounders div.founder p {
+  order: 1;
+}
+
+div#aboutPg div#founders div.leftFounders div.founder {
+  border-left: none;
+  border-radius: 0 1rem 1rem 0;
+}
+
+@media only screen and (max-width: 600px) {
+  div#aboutPg div#founders {
+    display: block;
+    width: 100vw;
+  }
+
+  div#aboutPg div#founders div {
+    width: 90vw;
+    height: auto !important;
+  }
+
+  div#aboutPg div.founder {
+    border: 0.5vh solid red !important;
+    border-left: none !important;
+    border-radius: 0 1rem 1rem 0 !important;
+    margin-top: 1rem;
+  }
+
+  div#aboutPg div.founder p {
+    margin: 0.5rem;
+    order: -1 !important;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
