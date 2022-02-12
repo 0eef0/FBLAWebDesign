@@ -19,19 +19,19 @@ const Products = () => {
                     <button className="Card-Btn"><h4 className="Card-Btn-Text">Click To See</h4></button>
                 </div>
                 </a>
-                <a className='link-Products' href="">
+                <a className='link-Products' href="https://eloquent-babbage-15108c.netlify.app/">
                     <div className="Card">
                     <img className="Card-Img" src="https://media.istockphoto.com/photos/laptop-computer-with-blue-pink-lighting-and-blank-screen-place-on-picture-id1292038829?b=1&k=20&m=1292038829&s=170667a&w=0&h=L8DhcSOFS3BZdCHN6ldjumqQBw0J2kk7mBagO5io5jM=" alt="" />
-                    <h3 className="Card-head">Website Two</h3>
-                    <p className="Card-Info">This website was made by Ethan Ryan Roldan</p>
+                    <h3 className="Card-head">Portfolio</h3>
+                    <p className="Card-Info">This website was made by Ethan Ray Roldan and it his is own personal portfolio. Please look and enjoy and if you would like to contact him or us, please head over to our contact page and contact one of our excellent employees</p>
                     <button className="Card-Btn"><h4 className="Card-Btn-Text">Click To See</h4></button>
                 </div>
                 </a>
-                <a className='link-Products' href="">
+                <a className='link-Products' href="https://hardcore-swanson-5478ef.netlify.app/">
                     <div className="Card">
-                    <img className="Card-Img" src="https://media.istockphoto.com/photos/laptop-computer-with-blue-pink-lighting-and-blank-screen-place-on-picture-id1292038829?b=1&k=20&m=1292038829&s=170667a&w=0&h=L8DhcSOFS3BZdCHN6ldjumqQBw0J2kk7mBagO5io5jM=" alt="" />
+                    <img className="Card-Img" src="https://play-lh.googleusercontent.com/aJid7LFfO4qTtH8u2lzU_dwjAnmAnpv7a7EAk9YBRupWyYyghj5OoapiVSNMN9w0CeLe" alt="" />
                     <h3 className="Card-head">Website Three</h3>
-                    <p className="Card-Info">This website was made by Lily Zalit</p>
+                    <p className="Card-Info">This website was made by Lily Zalit and it was predicting all of the nfl teams records. She was pretty close on all of them supriseingly.</p>
                     <button className="Card-Btn"><h4 className="Card-Btn-Text">Click To See</h4></button>
                 </div>
                 </a>
