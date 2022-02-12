@@ -286,6 +286,13 @@ div#homePage div#left {
   border-radius: 0 1rem 1rem 0;
   border: 0.5vh solid red;
   border-left: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#homePage div#left img {
+  width: 80%;
 }
 
 div#homePage div#right {
@@ -296,6 +303,16 @@ div#homePage div#right {
   justify-content: flex-end;
 }
 
+div#homePage div#right h1 {
+  font-size: calc(1.25vh + 1.25vw);
+  color: red;
+}
+
+div#homePage div#right p {
+  font-size: calc(1vh + 1vw);
+  color: red;
+}
+
 div#homePage div#right div.right-box {
   width: 100%;
   height: 35vh;
@@ -303,6 +320,7 @@ div#homePage div#right div.right-box {
   border-radius: 1rem 0 0 1rem;
   border: 0.5vh solid red;
   border-right: none;
+  padding: 0.5vw;
 }
 
 @media only screen and (max-width: 500px) {
@@ -318,6 +336,14 @@ div#homePage div#right div.right-box {
   div#homePage div#right {
     margin-left: auto;
     margin-right: 0;
+  }
+
+  div#homePage div#right h1 {
+    font-size: 2rem;
+  }
+
+  div#homePage div#right p {
+    font-size: 1rem;
   }
 
   div#homePage div#right div.right-box {
@@ -525,14 +551,14 @@ div#aboutPg div#founders div div.founder img {
   height: 80%;
   border-radius: 1rem;
   border: 0.5vh solid red;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   margin: 1vw;
 }
 
 div#aboutPg div#founders div div.founder p {
   margin: 0 1vw;
   color: red;
+  font-size: 1vw;
 }
 
 div#aboutPg div#founders div.rightFounders,
@@ -579,5 +605,8 @@ div#aboutPg div#founders div.leftFounders div.founder {
   div#aboutPg div.founder p {
     margin: 0.5rem;
     order: -1 !important;
+    font-size: 1rem !important;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
